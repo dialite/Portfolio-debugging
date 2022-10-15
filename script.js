@@ -362,7 +362,7 @@ Array.from(projectBtns).forEach((projectBtn) => projectBtn.addEventListener('cli
   lowerContentDiv.appendChild(asideContentDiv);
 
   //  class additions and removals
-  docBody.classList.add('still');
+  docBody.classList.add(still);
   overlay.classList.add('active');
   caravan.classList.add('blur-effect');
   modalWindow.classList.remove('close');
@@ -375,7 +375,7 @@ window.addEventListener('load', () => {
   docBody.classList.remove('still');
 });
 
-modalBtn.addEventListener('click', () => {
+modalBtn.addEventListener(click, () => {
   modalWindow.classList.add('close');
   overlay.classList.remove('active');
   caravan.classList.remove('blur-effect');
